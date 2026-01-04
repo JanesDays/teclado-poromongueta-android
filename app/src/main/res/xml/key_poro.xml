@@ -36,7 +36,7 @@
         <Key android:keyLabel="õ" android:codes="245" android:keyWidth="12.5%p" android:popupKeyboard="@xml/popup_o"/>
         <Key android:keyLabel="ng" android:codes="1002" android:keyWidth="12.5%p" />
         <Key android:keyLabel="ỹ" android:codes="7929" android:keyWidth="12.5%p" android:popupKeyboard="@xml/popup_y"/>
-        <Key android:keyLabel="g" android:codes="103" android:keyWidth="12.5%p" android:popupCharacters="ʻģğɣǧ"/>
+        <Key android:keyLabel="g" android:codes="103" android:keyWidth="12.5%p" android:popupKeyboard="@xml/popup_g"/>
         <Key android:keyLabel="î" android:codes="238" android:keyWidth="12.5%p" android:popupKeyboard="@xml/popup_i"/>
         <Key android:keyLabel="m" android:codes="109" android:keyWidth="12.5%p"/>
         <Key android:keyLabel="mb" android:codes="1000" android:keyWidth="12.5%p"/>
@@ -48,11 +48,11 @@
             android:codes="-1"
             android:keyWidth="14%p"/>
         <Key android:keyLabel="k" android:codes="107" android:keyWidth="12%p" />
-        <Key android:keyLabel="r" android:codes="114" android:keyWidth="12%p" android:popupCharacters="ŕřṛ"/>
-        <Key android:keyLabel="s" android:codes="115" android:keyWidth="12%p" android:popupCharacters="ṣ̌şșṣß§śŝš"/>
-        <Key android:keyLabel="t" android:codes="116" android:keyWidth="12%p" android:popupCharacters="þťŧțţṭ"/>
-        <Key android:keyLabel="x" android:codes="120" android:keyWidth="12%p" android:popupCharacters="x̌"/>
-        <Key android:keyLabel="w" android:codes="119" android:keyWidth="12%p" android:popupCharacters="Ŵẁẃẅ"/>
+        <Key android:keyLabel="r" android:codes="114" android:keyWidth="12%p" android:popupKeyboard="@xml/popup_r"/>
+        <Key android:keyLabel="s" android:codes="115" android:keyWidth="12%p" android:popupKeyboard="@xml/popup_s"/>
+        <Key android:keyLabel="t" android:codes="116" android:keyWidth="12%p" android:popupKeyboard="@xml/popup_t"/>
+        <Key android:keyLabel="x" android:codes="120" android:keyWidth="12%p" android:popupKeyboard="@xml/popup_x"/>
+        <Key android:keyLabel="w" android:codes="119" android:keyWidth="12%p" android:popupKeyboard="@xml/popup_w"/>
         <Key android:keyLabel="⌫"
             android:codes="-5"
             android:keyWidth="14%p"/>
@@ -75,7 +75,7 @@
             android:keyWidth="52%p"
             android:isRepeatable="false"/>
 
-        <Key android:keyLabel="." android:codes="46" android:keyWidth="12%p" android:popupCharacters=",!\?\@#:;" />
+        <Key android:keyLabel="." android:codes="46" android:keyWidth="12%p" android:popupKeyboard="@xml/popup_symbols" />
 
         <Key android:keyLabel="↵"
             android:codes="-4"

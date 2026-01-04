@@ -88,7 +88,7 @@
             android:keyWidth="50%p"
             android:isRepeatable="false"/>
 
-        <Key android:keyLabel="." android:codes="46" android:keyWidth="14%p" android:popupCharacters=",!\?\@#:;"  />
+        <Key android:keyLabel="." android:codes="46" android:keyWidth="14%p" android:popupKeyboard="@xml/popup_symbols"  />
 
         <!-- Enter -->
         <Key android:keyLabel="↵"
