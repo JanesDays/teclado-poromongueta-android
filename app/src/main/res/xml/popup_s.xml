@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="25%p"
+    android:keyHeight="50dp"
+    android:horizontalGap="2dp"
+    android:verticalGap="2dp">
+
+    <Row>
+        <Key android:keyLabel="s" android:codes="115"/>
+        <!-- š + combining dot below -->
+        <Key android:keyLabel="ṣ̌" android:codes="353,803"/>
+
+        <Key android:keyLabel="ş" android:codes="351"/>
+        <Key android:keyLabel="ș" android:codes="537"/>
+        <Key android:keyLabel="ṣ" android:codes="7779"/>
+        <Key android:keyLabel="ß" android:codes="223"/>
+        <Key android:keyLabel="§" android:codes="167"/>
+        <Key android:keyLabel="ś" android:codes="347"/>
+        <Key android:keyLabel="ŝ" android:codes="349"/>
+        <Key android:keyLabel="š" android:codes="353"/>
+    </Row>
+
+</Keyboard>

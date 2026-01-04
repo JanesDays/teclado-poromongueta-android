@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="25%p"
+    android:keyHeight="50dp"
+    android:horizontalGap="2dp"
+    android:verticalGap="2dp">
+
+    <Row>
+        <Key android:keyLabel="z" android:codes="122"/>
+        <Key android:keyLabel="ź" android:codes="378"/>
+        <Key android:keyLabel="ż" android:codes="380"/>
+        <Key android:keyLabel="ž" android:codes="382"/>
+
+        <!-- z + combining dot below + combining caron -->
+        <Key android:keyLabel="ẓ̌" android:codes="122,803,780"/>
+    </Row>
+
+</Keyboard>

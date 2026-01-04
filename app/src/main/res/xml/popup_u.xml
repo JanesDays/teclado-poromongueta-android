@@ -1,0 +1,31 @@
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="20%p"
+    android:keyHeight="50dp"
+    android:horizontalGap="2dp"
+    android:verticalGap="2dp">
+
+    <!-- Variações especiais / fonéticas -->
+    <Row>
+        <Key android:keyLabel="u" android:codes="117"/>
+        <Key android:keyLabel="ụ" android:codes="7909"/>
+        <Key android:keyLabel="ư" android:codes="432"/>
+        <Key android:keyLabel="ų" android:codes="371"/>
+        <Key android:keyLabel="ű" android:codes="369"/>
+        <Key android:keyLabel="ů" android:codes="367"/>
+    </Row>
+
+    <!-- Variações longas -->
+    <Row>
+        <Key android:keyLabel="ŭ" android:codes="365"/>
+        <Key android:keyLabel="ū" android:codes="363"/>
+        <Key android:keyLabel="û" android:codes="251"/>
+        <Key android:keyLabel="ù" android:codes="249"/>
+        <Key android:keyLabel="ü" android:codes="252"/>
+    </Row>
+
+    <!-- Acento agudo -->
+    <Row>
+        <Key android:keyLabel="ú" android:codes="250"/>
+    </Row>
+
+</Keyboard>

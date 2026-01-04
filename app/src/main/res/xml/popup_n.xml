@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="25%p"
+    android:keyHeight="50dp"
+    android:horizontalGap="2dp"
+    android:verticalGap="2dp">
+
+    <Row>
+        <Key android:keyLabel="n" android:codes="110"/>
+        <Key android:keyLabel="ṇ" android:codes="7751"/>
+        <Key android:keyLabel="ñ" android:codes="241"/>
+        <Key android:keyLabel="ń" android:codes="324"/>
+        <Key android:keyLabel="ň" android:codes="328"/>
+    </Row>
+
+</Keyboard>

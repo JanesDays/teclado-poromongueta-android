@@ -1,0 +1,35 @@
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="20%p"
+    android:keyHeight="50dp"
+    android:horizontalGap="2dp"
+    android:verticalGap="2dp">
+
+    <!-- Variações fonéticas / especiais -->
+    <Row>
+        <Key android:keyLabel="º" android:codes="186"/>
+        <Key android:keyLabel="ɔ" android:codes="596"/>
+        <Key android:keyLabel="œ" android:codes="339"/>
+        <Key android:keyLabel="ơ" android:codes="417"/>
+        <Key android:keyLabel="ọ" android:codes="7885"/>
+    </Row>
+
+    <!-- Acentos longos e traços -->
+    <Row>
+        <Key android:keyLabel="o" android:codes="111"/>
+        <Key android:keyLabel="ō" android:codes="333"/>
+        <Key android:keyLabel="ŏ" android:codes="335"/>
+        <Key android:keyLabel="ő" android:codes="337"/>
+        <Key android:keyLabel="ø" android:codes="248"/>
+        <Key android:keyLabel="ö" android:codes="246"/>
+    </Row>
+
+    <!-- Acentos comuns -->
+    <Row>
+        <Key android:keyLabel="ò" android:codes="242"/>
+        <Key android:keyLabel="ó" android:codes="243"/>
+        <Key android:keyLabel="ô" android:codes="244"/>
+        <Key android:keyLabel="õ" android:codes="245"/>
+        <Key android:keyLabel="ʻ" android:codes="699"/>
+    </Row>
+
+</Keyboard>

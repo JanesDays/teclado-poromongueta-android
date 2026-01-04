@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="20%p"
+    android:keyHeight="50dp"
+    android:horizontalGap="2dp"
+    android:verticalGap="2dp">
+
+    <Row>
+        <Key android:keyLabel="g" android:codes="103"/>
+        <Key android:keyLabel="gʻ" android:codes="489"/>
+        <Key android:keyLabel="ģ" android:codes="291"/>
+        <Key android:keyLabel="ğ" android:codes="287"/>
+        <Key android:keyLabel="ɣ" android:codes="611"/>
+        <Key android:keyLabel="ǧ" android:codes="487"/>
+    </Row>
+
+</Keyboard>

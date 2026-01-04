@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="20%p"
+    android:keyHeight="50dp"
+    android:horizontalGap="2dp"
+    android:verticalGap="2dp">
+
+    <Row>
+        <Key android:keyLabel="c" android:codes="99"/>
+        <Key android:keyLabel="ç" android:codes="231"/>
+        <Key android:keyLabel="ć" android:codes="263"/>
+        <Key android:keyLabel="ĉ" android:codes="265"/>
+        <Key android:keyLabel="č" android:codes="269"/>
+        <Key android:keyLabel="č̣" android:codes="269"/>
+    </Row>
+</Keyboard>

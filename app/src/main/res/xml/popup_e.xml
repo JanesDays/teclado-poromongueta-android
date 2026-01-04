@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="20%p"
+    android:keyHeight="50dp"
+    android:horizontalGap="2dp"
+    android:verticalGap="2dp">
+
+    <Row>
+        <Key android:keyLabel="e" android:codes="101"/>
+        <Key android:keyLabel="ę" android:codes="281"/>
+        <Key android:keyLabel="ě" android:codes="283"/>
+        <Key android:keyLabel="ĕ" android:codes="277"/>
+        <Key android:keyLabel="ə" android:codes="601"/>
+        <Key android:keyLabel="ɛ" android:codes="603"/>
+    </Row>
+
+    <Row>
+        <Key android:keyLabel="ẹ" android:codes="7865"/>
+        <Key android:keyLabel="é" android:codes="233"/>
+        <Key android:keyLabel="ê" android:codes="234"/>
+        <Key android:keyLabel="è" android:codes="232"/>
+        <Key android:keyLabel="ë" android:codes="235"/>
+    </Row>
+
+</Keyboard>

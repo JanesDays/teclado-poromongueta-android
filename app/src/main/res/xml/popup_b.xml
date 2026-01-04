@@ -1,0 +1,12 @@
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="30%p"
+    android:keyHeight="50dp"
+    android:horizontalGap="2dp"
+    android:verticalGap="2dp">
+
+    <Row>
+        <Key android:keyLabel="b" android:codes="98"/>
+        <Key android:keyLabel="ɓ" android:codes="384"/>
+    </Row>
+
+</Keyboard>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="25%p"
+    android:keyHeight="50dp"
+    android:horizontalGap="2dp"
+    android:verticalGap="2dp">
+
+    <Row>
+        <Key android:keyLabel="t" android:codes="116"/>
+        <Key android:keyLabel="þ" android:codes="254"/>
+        <Key android:keyLabel="ť" android:codes="357"/>
+        <Key android:keyLabel="ŧ" android:codes="359"/>
+        <Key android:keyLabel="ț" android:codes="539"/>
+        <Key android:keyLabel="ţ" android:codes="355"/>
+        <Key android:keyLabel="ṭ" android:codes="7789"/>
+    </Row>
+
+</Keyboard>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="20%p"
+    android:keyHeight="50dp"
+    android:horizontalGap="2dp"
+    android:verticalGap="2dp">
+
+    <Row>
+        <Key android:keyLabel="d" android:codes="100"/>
+        <Key android:keyLabel="ð" android:codes="240"/>
+        <Key android:keyLabel="ď" android:codes="271"/>
+        <Key android:keyLabel="đ" android:codes="273"/>
+        <Key android:keyLabel="ɗ" android:codes="599"/>
+        <Key android:keyLabel="ḍ" android:codes="7693"/>
+    </Row>
+</Keyboard>

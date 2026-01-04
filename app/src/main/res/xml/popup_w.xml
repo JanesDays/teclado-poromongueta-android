@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="25%p"
+    android:keyHeight="50dp"
+    android:horizontalGap="2dp"
+    android:verticalGap="2dp">
+
+    <Row>
+        <Key android:keyLabel="w" android:codes="119"/>
+        <Key android:keyLabel="ŵ" android:codes="373"/>
+        <Key android:keyLabel="ẁ" android:codes="7809"/>
+        <Key android:keyLabel="ẃ" android:codes="7811"/>
+        <Key android:keyLabel="ẅ" android:codes="7813"/>
+    </Row>
+
+</Keyboard>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="20%p"
+    android:keyHeight="50dp"
+    android:horizontalGap="2dp"
+    android:verticalGap="2dp">
+
+    <Row>
+        <Key android:keyLabel="i"  android:codes="105"/>
+        <Key android:keyLabel="ị" android:codes="7883"/>
+        <Key android:keyLabel="ı" android:codes="305"/>
+        <Key android:keyLabel="į" android:codes="303"/>
+        <Key android:keyLabel="ī" android:codes="299"/>
+    </Row>
+
+    <Row>
+        <Key android:keyLabel="ï" android:codes="239"/>
+        <Key android:keyLabel="î" android:codes="238"/>
+        <Key android:keyLabel="ì" android:codes="236"/>
+        <Key android:keyLabel="í" android:codes="237"/>
+
+    </Row>
+</Keyboard>

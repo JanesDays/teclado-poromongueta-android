@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="25%p"
+    android:keyHeight="50dp"
+    android:horizontalGap="2dp"
+    android:verticalGap="2dp">
+
+    <Row>
+        <Key android:keyLabel="l" android:codes="108"/>
+        <!-- · + l -->
+        <Key android:keyLabel="·l" android:codes="183,108"/>
+
+        <Key android:keyLabel="ł" android:codes="322"/>
+        <Key android:keyLabel="ľ" android:codes="318"/>
+        <Key android:keyLabel="ļ" android:codes="316"/>
+        <Key android:keyLabel="ĺ" android:codes="314"/>
+    </Row>
+
+</Keyboard>
