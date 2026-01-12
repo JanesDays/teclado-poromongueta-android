@@ -13,6 +13,7 @@
         <Key android:keyLabel="#" android:codes="35"/>
         <Key android:keyLabel=":" android:codes="58"/>
         <Key android:keyLabel="&quot;" android:codes="34"/>
+        <Key android:keyLabel=";" android:codes="59" />
     </Row>
 
 </Keyboard>

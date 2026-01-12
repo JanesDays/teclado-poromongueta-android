@@ -20,13 +20,12 @@
 
     <!-- Linha 1 -->
     <Row>
-        <Key android:keyLabel="'"  android:codes="39" android:keyWidth="12.50%p"/>
-        <Key android:keyLabel="p" android:codes="112" android:keyWidth="12.28%p"/>
-        <Key android:keyLabel="ẽ" android:codes="7869" android:keyWidth="12.28%p" android:popupKeyboard="@xml/popup_e" />
-        <Key android:keyLabel="ĩ" android:codes="297" android:keyWidth="12.28%p" android:popupKeyboard="@xml/popup_i" />
-        <Key android:keyLabel="nd" android:codes="1001" android:keyWidth="12.28%p"/>
+        <Key android:keyLabel="'"  android:codes="39" android:keyWidth="14.50%p"/>
+        <Key android:keyLabel="p" android:codes="112" android:keyWidth="14.28%p"/>
+        <Key android:keyLabel="ẽ" android:codes="7869" android:keyWidth="14.28%p" android:popupKeyboard="@xml/popup_e" />
+        <Key android:keyLabel="ĩ" android:codes="297" android:keyWidth="14.28%p" android:popupKeyboard="@xml/popup_i" />
+        <Key android:keyLabel="nd" android:codes="1001" android:keyWidth="14.28%p"/>
         <Key android:keyLabel="ũ" android:codes="361" android:keyWidth="12.28%p" android:popupKeyboard="@xml/popup_u" />
-        <Key android:keyLabel="ỹ" android:codes="7929" android:keyWidth="12.28%p" android:popupKeyboard="@xml/popup_y"/>
         <Key android:keyLabel="n" android:codes="110" android:keyWidth="14.28%p"/>
     </Row>
 
