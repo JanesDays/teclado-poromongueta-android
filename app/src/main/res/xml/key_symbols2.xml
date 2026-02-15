@@ -1,47 +1,47 @@
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
     android:keyWidth="10%p"
-    android:keyHeight="50dp"
-    android:horizontalGap="2dp"
-    android:verticalGap="2dp">
+    android:horizontalGap="6dp"
+    android:verticalGap="8dp"
+    android:keyHeight="38dp">
 
     <Row>
-        <Key android:keyLabel="~" android:codes="126" android:keyWidth="9%p"/>
-        <Key android:keyLabel="/" android:codes="47" android:keyWidth="10%p"/>
-        <Key android:keyLabel="\\" android:codes="92"  android:keyWidth="9%p"/>
-        <Key android:keyLabel="^" android:codes="94" android:keyWidth="10%p"/>
-        <Key android:keyLabel= "'" android:codes="39" android:keyWidth="9%p"/>
-        <Key android:keyLabel="&quot;" android:codes="34" android:keyWidth="9%p"/>
-        <Key android:keyLabel="|" android:codes="124" android:keyWidth="10%p"/>
-        <Key android:keyLabel=";" android:codes="59" android:keyWidth="9%p"/>
-        <Key android:keyLabel="{" android:codes="123" android:keyWidth="10%p"/>
-        <Key android:keyLabel="}" android:codes="125" android:keyWidth="10%p"/>
+        <Key android:keyLabel="~" android:codes="126"/>
+        <Key android:keyLabel="/" android:codes="47"/>
+        <Key android:keyLabel="\\" android:codes="92"/>
+        <Key android:keyLabel="^" android:codes="94"/>
+        <Key android:keyLabel= "'" android:codes="39"/>
+        <Key android:keyLabel="&quot;" android:codes="34"/>
+        <Key android:keyLabel="|" android:codes="124"/>
+        <Key android:keyLabel=";" android:codes="59"/>
+        <Key android:keyLabel="{" android:codes="123"/>
+        <Key android:keyLabel="}" android:codes="125"/>
     </Row>
 
     <Row>
-        <Key android:keyLabel="¯" android:codes="175" android:keyWidth="9%p"/>
-        <Key android:keyLabel="°" android:codes="176" android:keyWidth="10%p"/>
-        <Key android:keyLabel="²" android:codes="178" android:keyWidth="9%p"/>
-        <Key android:keyLabel="³" android:codes="179" android:keyWidth="10%p"/>
-        <Key android:keyLabel="´" android:codes="180" android:keyWidth="9%p"/>
-        <Key android:keyLabel="·" android:codes="183" android:keyWidth="10%p"/>
-        <Key android:keyLabel="≥" android:codes="8805" android:keyWidth="9%p"/>
-        <Key android:keyLabel="≤" android:codes="8804" android:keyWidth="10%p"/>
-        <Key android:keyLabel="≈" android:codes="8776" android:keyWidth="9%p"/>
-        <Key android:keyLabel="ƒ" android:codes="402" android:keyWidth="10%p"/>
+        <Key android:keyLabel="¯" android:codes="175"/>
+        <Key android:keyLabel="°" android:codes="176"/>
+        <Key android:keyLabel="²" android:codes="178"/>
+        <Key android:keyLabel="³" android:codes="179"/>
+        <Key android:keyLabel="´" android:codes="180"/>
+        <Key android:keyLabel="·" android:codes="183"/>
+        <Key android:keyLabel="≥" android:codes="8805"/>
+        <Key android:keyLabel="≤" android:codes="8804"/>
+        <Key android:keyLabel="≈" android:codes="8776"/>
+        <Key android:keyLabel="ƒ" android:codes="402"/>
     </Row>
 
 
     <Row>
-        <Key android:keyLabel="‘" android:codes="8216" android:keyWidth="9%p"/>
-        <Key android:keyLabel="¬" android:codes="172" android:keyWidth="10%p"/>
-        <Key android:keyLabel="¨" android:codes="168" android:keyWidth="9%p"/>
-        <Key android:keyLabel="§" android:codes="167" android:keyWidth="10%p"/>
-        <Key android:keyLabel="¦" android:codes="166" android:keyWidth="9%p"/>
-        <Key android:keyLabel="ø" android:codes="248" android:keyWidth="10%p"/>
-        <Key android:keyLabel="£" android:codes="163" android:keyWidth="9%p"/>
-        <Key android:keyLabel="√" android:codes="8730" android:keyWidth="10%p"/>
-        <Key android:keyLabel="•" android:codes="8226" android:keyWidth="9%p"/>
-        <Key android:keyLabel="°" android:codes="176" android:keyWidth="10%p"/>
+        <Key android:keyLabel="‘" android:codes="8216"/>
+        <Key android:keyLabel="¬" android:codes="172"/>
+        <Key android:keyLabel="¨" android:codes="168"/>
+        <Key android:keyLabel="§" android:codes="167"/>
+        <Key android:keyLabel="¦" android:codes="166"/>
+        <Key android:keyLabel="ø" android:codes="248"/>
+        <Key android:keyLabel="£" android:codes="163"/>
+        <Key android:keyLabel="√" android:codes="8730"/>
+        <Key android:keyLabel="•" android:codes="8226"/>
+        <Key android:keyLabel="°" android:codes="176"/>
     </Row>
 
     <Row>

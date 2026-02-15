@@ -9,6 +9,9 @@
         <Key android:keyLabel="i"  android:codes="105"/>
         <Key android:keyLabel="í" android:codes="237"/>
         <Key android:keyLabel="ĩ" android:codes="297"/>
+        <Key android:keyLabel="ɨ"  android:codes="616"/>
     </Row>
 
 </Keyboard>
+
+    <!-- popup para o teclado poromongueta -->

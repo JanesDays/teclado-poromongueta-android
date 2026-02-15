@@ -6,3 +6,5 @@
     android:padding="6dp"
     android:background="@android:color/transparent"
     android:textColor="@android:color/white"/>
+
+<!-- Não é o balão de popup-->

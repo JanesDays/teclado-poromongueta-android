@@ -11,7 +11,7 @@ import android.view.inputmethod.InputConnection
 class PoromonguetaKeyboard : InputMethodService(),
     KeyboardView.OnKeyboardActionListener {
 
-    private lateinit var keyboardView: KeyboardView
+    private lateinit var keyboardView: CustomKeyboardView
     private lateinit var keyboardPoro: Keyboard
     private lateinit var keyboardAbc: Keyboard
     private lateinit var keyboardSymbols: Keyboard
@@ -32,7 +32,7 @@ class PoromonguetaKeyboard : InputMethodService(),
         keyboardView = layoutInflater.inflate(
             R.layout.keyboard_view,
             null
-        ) as KeyboardView
+        ) as CustomKeyboardView
 
         keyboardPoro = Keyboard(this, R.xml.key_poro)
         keyboardAbc = Keyboard(this, R.xml.key_abc)
@@ -42,7 +42,6 @@ class PoromonguetaKeyboard : InputMethodService(),
         keyboardView.keyboard = keyboardPoro
         keyboardView.setOnKeyboardActionListener(this)
         keyboardView.isPreviewEnabled = false
-        keyboardView.isLongClickable = true
 
         return keyboardView
     }
@@ -59,6 +58,7 @@ class PoromonguetaKeyboard : InputMethodService(),
             Keyboard.KEYCODE_SHIFT -> {
                 isShifted = !isShifted
                 keyboardView.keyboard.isShifted = isShifted
+                keyboardView.shiftActive = isShifted //Converte para maiusculo se SHIFT estiver ativo
                 keyboardView.invalidateAllKeys()
             }
 
@@ -109,7 +109,7 @@ class PoromonguetaKeyboard : InputMethodService(),
     override fun onRelease(primaryCode: Int) {
         if (primaryCode == Keyboard.KEYCODE_DELETE) {
             isDeleting = false
-            deleteHandler.removeCallbacks(deleteRunnable!!)
+            deleteRunnable?.let { deleteHandler.removeCallbacks(it) }
         }
     }
 

@@ -1,17 +1,25 @@
-<android.inputmethodservice.KeyboardView
+<com.rick.tecladoporomongueta.CustomKeyboardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/keyboard"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
 
-    android:background="#000000"
+    android:background="#121212"
 
-    android:keyPreviewLayout="@layout/keyboard_popup"
-    android:keyPreviewHeight="48dp"
-    android:keyPreviewOffset="-24dp"
+    android:keyBackground="@drawable/key_bg"
+    android:keyTextColor="#FFFFFF"
+    android:keyTextSize="20sp"
 
-    android:paddingTop="8dp"
-    android:paddingBottom="48dp" />
+
+
+    android:paddingTop="12dp"
+    android:paddingBottom="50dp"/>
+
+    <!-- KeyTextSize aumenta o tamanho da letra dentro do balão do teclado-->
+
+    <!-- keyboard_ view Aqui é onde fica o layout do teclado -->
+    <!-- que tambem teve que ser feito ajuste no key_bg.xml -->
+
 
 
 

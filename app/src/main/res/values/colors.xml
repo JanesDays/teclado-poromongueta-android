@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Fundo do ícone -->
+    <color name="launcher_background">#1E1E1E</color>
 </resources>

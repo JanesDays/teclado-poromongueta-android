@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Keyboard xmlns:android="http://schemas.android.com/apk/res/android">
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+android:keyWidth="20%p"
+android:keyHeight="50dp"
+android:horizontalGap="2dp"
+android:verticalGap="2dp">
+
     <Row>
         <Key android:keyLabel="u" android:codes="117"/>
         <Key android:keyLabel="ũ" android:codes="361"/>
@@ -7,3 +12,5 @@
         <Key android:keyLabel="û" android:codes="251"/>
     </Row>
 </Keyboard>
+
+    <!-- popup para o teclado poromongueta -->

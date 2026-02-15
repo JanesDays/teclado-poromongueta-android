@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.inputmethodservice.KeyboardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popupKeyboard"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/key_bg"
+    android:keyBackground="@drawable/key_bg"
+    android:keyTextColor="#FFFFFF"
+    android:keyTextSize="22sp"
+
+    android:padding="6dp"
+
+    android:shadowColor="#000000"
+    android:shadowRadius="2"
+    android:shadowDx="0"
+    android:shadowDy="1"
+    />
+
