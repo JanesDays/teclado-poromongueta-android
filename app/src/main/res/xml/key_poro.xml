@@ -26,7 +26,7 @@
         <Key android:keyLabel="e" android:codes="101" android:popupKeyboard="@xml/popup_ep" />
         <Key android:keyLabel="r" android:codes="114"/>
         <Key android:keyLabel="t" android:codes="116"/>
-        <Key android:keyLabel="ỹ" android:codes="7929"/>
+        <Key android:keyLabel="ỹ" android:codes="7929" android:popupKeyboard="@xml/popup_yp"/>
         <Key android:keyLabel="u" android:codes="117" android:popupKeyboard="@xml/popup_up"/>
         <Key android:keyLabel="i" android:codes="105" android:popupKeyboard="@xml/popup_ip"/>
         <Key android:keyLabel="o" android:codes="111" android:popupKeyboard="@xml/popup_op"/>
@@ -85,7 +85,7 @@
 
         <Key
             android:keyLabel="."
-            android:codes="46" />
+            android:codes="46" android:popupKeyboard="@xml/popup_symbols"/>
 
         <Key android:keyLabel="↵"
             android:codes="-4"

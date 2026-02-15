@@ -26,6 +26,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintVertical_chainStyle="packed"/>
 
+<!--  Subtexto -->
+    <TextView
+        android:id="@+id/criadorProjeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Criador do Projeto: MBo'esara Esãîã Tremembé"
+        android:textSize="16sp"
+        android:textColor="#BBBBBB"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+
+        app:layout_constraintTop_toBottomOf="@id/titulo"
+        app:layout_constraintBottom_toTopOf="@id/subtitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
     <!-- Subtexto -->
     <TextView
         android:id="@+id/subtitulo"
@@ -34,14 +50,13 @@
         android:text="Desenvolvido por: Rick Janes Matos Dias"
         android:textSize="16sp"
         android:textColor="#BBBBBB"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
 
         app:layout_constraintTop_toBottomOf="@id/titulo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
