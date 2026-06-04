@@ -34,11 +34,10 @@
     </Row>
 
     <!-- Linha 2 -->
-    <Row android:keyWidth="11%p">
+    <Row android:keyWidth="14%p">
         <Key android:keyLabel="a" android:codes="97" android:popupKeyboard="@xml/popup_ap"/>
         <Key android:keyLabel="s" android:codes="115"/>
         <Key android:keyLabel="nd" android:codes="1001"/>
-        <Key android:keyLabel="p" android:codes="112"/>
         <Key android:keyLabel="g" android:codes="103"/>
         <Key android:keyLabel="î" android:codes="238"/>
         <Key android:keyLabel="k" android:codes="107"/>
@@ -70,7 +69,7 @@
             android:keyWidth="12%p"/>
 
         <Key android:keyLabel="!#1"
-            android:codes="-10"/>
+            android:codes="-12"/>
 
 
         <Key

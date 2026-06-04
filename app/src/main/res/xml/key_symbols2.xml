@@ -69,7 +69,7 @@
             <Key
                 android:keyLabel="2/2" android:codes="-100" android:keyWidth="16%p"/>
 
-            android:codes="-11" android:keyLabel="PMG" android:keyWidth="12%p"/>
+            <Key android:codes="-11" android:keyLabel="PMG" android:keyWidth="12%p"/>
 
             <Key android:codes="-10" android:keyLabel="ABC" android:keyWidth="12%p"/>
             <!--caps -->
