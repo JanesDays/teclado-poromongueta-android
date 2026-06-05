@@ -1,4 +1,4 @@
-﻿# Teclado Poromongûetá — v1.0
+﻿# Teclado Poromongûetá — v3.0
 
 ## Funcionalidades
 - Teclado físico virtual com layouts **PORO**, **ABC** e **SÍMBOLOS**
@@ -9,7 +9,7 @@
 - **Aprendizado**: palavras digitadas são salvas automaticamente e aparecem como sugestões
 - Tecla Shift, tecla de espaço, tecla Enter, backspace com repeat
 
-## Melhorias e Correções (v1.0)
+## Melhorias e Correções (v3.0)
 - Ícone personalizado do teclado (extraído do .ico original, gerado para todas as densidades)
 - Popup de preview não intercepta toques (isTouchable = false)
 - Popup de preview posicionado corretamente dentro da janela do IME
