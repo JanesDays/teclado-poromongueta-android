@@ -4,7 +4,10 @@ import android.content.Context
 import android.inputmethodservice.Keyboard
 import android.inputmethodservice.KeyboardView
 import android.util.AttributeSet
+import android.view.Gravity
 import android.view.LayoutInflater
+import android.view.MotionEvent
+import android.view.View
 import android.view.ViewGroup
 import android.widget.PopupWindow
 
@@ -15,6 +18,8 @@ class CustomKeyboardView @JvmOverloads constructor(
 
     private var popupWindow: PopupWindow? = null
     private var actionListener: OnKeyboardActionListener? = null
+    private val keyPreviewPopup: KeyPreviewPopup by lazy { KeyPreviewPopup(context) }
+    private var lastKeyCode: Int = Int.MIN_VALUE
 
     var shiftActive: Boolean = false
 
@@ -23,11 +28,59 @@ class CustomKeyboardView @JvmOverloads constructor(
         actionListener = listener
     }
 
+    override fun onTouchEvent(me: MotionEvent): Boolean {
+        when (me.actionMasked) {
+            MotionEvent.ACTION_DOWN -> {
+                val key = getKeyAt(me.x, me.y)
+                if (key != null) {
+                    lastKeyCode = key.codes[0]
+                    keyPreviewPopup.show(this, key, shiftActive, me.rawX, me.rawY)
+                }
+            }
+
+            MotionEvent.ACTION_MOVE -> {
+                if (keyPreviewPopup.isShowing) {
+                    val key = getKeyAt(me.x, me.y)
+                    if (key != null && key.codes[0] != lastKeyCode) {
+                        lastKeyCode = key.codes[0]
+                        keyPreviewPopup.show(this, key, shiftActive, me.rawX, me.rawY)
+                    }
+                }
+            }
+
+            MotionEvent.ACTION_UP,
+            MotionEvent.ACTION_CANCEL -> {
+                keyPreviewPopup.dismissWithAnimation()
+                lastKeyCode = Int.MIN_VALUE
+            }
+        }
+        return super.onTouchEvent(me)
+    }
+
+    override fun onDetachedFromWindow() {
+        super.onDetachedFromWindow()
+        keyPreviewPopup.dismissImmediately()
+    }
+
+    private fun getKeyAt(x: Float, y: Float): Keyboard.Key? {
+        val kbd = keyboard ?: return null
+        val adjX = x - paddingLeft
+        val adjY = y - paddingTop
+        for (key in kbd.keys) {
+            if (adjX >= key.x && adjX <= key.x + key.width &&
+                adjY >= key.y && adjY <= key.y + key.height
+            ) {
+                return key
+            }
+        }
+        return null
+    }
+
     override fun onLongPress(key: Keyboard.Key?): Boolean {
+        keyPreviewPopup.dismissImmediately()
 
         if (key != null && key.popupResId != 0) {
 
-            // Fecha popup anterior
             popupWindow?.dismiss()
 
             val popupKeyboard = Keyboard(context, key.popupResId)
@@ -95,8 +148,22 @@ class CustomKeyboardView @JvmOverloads constructor(
             popupWindow?.isOutsideTouchable = true
             popupWindow?.elevation = 20f
 
-            // Abre (estável)
-            popupWindow?.showAtLocation(this, 0, 0, 0)
+            // Posiciona sobre a tecla pressionada
+            val kbd = keyboard
+            if (kbd != null && key.codes.isNotEmpty()) {
+                popupView.measure(
+                    View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED),
+                    View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED)
+                )
+                val pw = popupView.measuredWidth
+                val ph = popupView.measuredHeight
+                val px = key.x + (key.width - pw) / 2
+                val margin = (8 * resources.displayMetrics.density).toInt()
+                val py = key.y - ph - margin
+                popupWindow?.showAtLocation(this, Gravity.TOP or Gravity.LEFT, px, py)
+            } else {
+                popupWindow?.showAtLocation(this, Gravity.TOP or Gravity.LEFT, 0, 0)
+            }
 
             return true
         }

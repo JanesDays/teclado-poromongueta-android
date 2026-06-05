@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/preview_text"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:textSize="28sp"
-
-    android:background="@android:drawable/dialog_holo_light_frame"
-    android:padding="10dp" />
-
-<!--LIXO-->
+    android:gravity="center"
+    android:textSize="32sp"
+    android:textStyle="bold"
+    android:textColor="#FFFFFF"
+    android:includeFontPadding="false"
+    android:paddingStart="18dp"
+    android:paddingEnd="18dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:background="@drawable/key_preview_bg" />

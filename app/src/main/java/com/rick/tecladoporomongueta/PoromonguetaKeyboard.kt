@@ -242,7 +242,11 @@ class PoromonguetaKeyboard : InputMethodService(),
         }
     }
 
-    override fun onText(text: CharSequence?) {}
+    override fun onText(text: CharSequence?) {
+        text?.let {
+            currentInputConnection?.commitText(it, 1)
+        }
+    }
     override fun swipeLeft() {}
     override fun swipeRight() {}
     override fun swipeDown() {}

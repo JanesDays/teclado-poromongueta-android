@@ -11,6 +11,6 @@
         <Key android:keyLabel="ć" android:codes="263"/>
         <Key android:keyLabel="ĉ" android:codes="265"/>
         <Key android:keyLabel="č" android:codes="269"/>
-        <Key android:keyLabel="č̣" android:codes="269"/>
+        <Key android:keyLabel="č̣" android:codes="269,803"/>
     </Row>
 </Keyboard>
