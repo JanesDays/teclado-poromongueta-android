@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PoroKeyboardView">
+        <attr name="poroKeyBackground" format="reference" />
+        <attr name="poroKeyTextColor" format="color" />
+        <attr name="poroKeyTextSize" format="dimension" />
+        <attr name="poroLabelTextSize" format="dimension" />
+    </declare-styleable>
+</resources>

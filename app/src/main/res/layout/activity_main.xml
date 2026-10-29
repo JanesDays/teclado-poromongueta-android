@@ -1,78 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#121212"
+    android:background="@color/poro_bg"
+    android:fillViewport="true"
     tools:context=".MainActivity">
 
-    <ImageButton
-        android:id="@+id/btnFechar"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:background="?android:attr/selectableItemBackgroundBorderless"
-        android:src="@drawable/ic_close"
-        android:contentDescription="Fechar"
-        android:tint="#888888"
-        android:scaleType="center"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"/>
-
-    <!-- Texto principal -->
-    <TextView
-        android:id="@+id/titulo"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Teclado Poromongûetá Instalado"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:gravity="center"
-        android:textAlignment="center"
+        android:orientation="vertical"
+        android:padding="24dp">
 
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/subtitulo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"/>
+        <ImageButton
+            android:id="@+id/btnFechar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/close"
+            android:scaleType="center"
+            android:src="@drawable/ic_close"
+            app:tint="@color/poro_hint" />
 
-    <!--  Subtexto -->
-    <TextView
-        android:id="@+id/criadorProjeto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Criador do Projeto: MBo'esara Esãîã Tremembé"
-        android:textSize="16sp"
-        android:textColor="#BBBBBB"
-        android:layout_marginTop="8dp"
-        android:gravity="center"
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/main_title"
+            android:textColor="@color/poro_text"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
-        app:layout_constraintTop_toBottomOf="@id/titulo"
-        app:layout_constraintBottom_toTopOf="@id/subtitulo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"/>
+        <TextView
+            android:id="@+id/criadorProjeto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/main_creator"
+            android:textColor="@color/poro_text_secondary"
+            android:textSize="16sp" />
 
-    <!-- Subtexto -->
-    <TextView
-        android:id="@+id/subtitulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Desenvolvido por: Rick Janes Matos Dias"
-        android:textSize="16sp"
-        android:textColor="#BBBBBB"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
+        <TextView
+            android:id="@+id/subtitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/main_developer"
+            android:textColor="@color/poro_text_secondary"
+            android:textSize="16sp" />
 
-        app:layout_constraintTop_toBottomOf="@id/criadorProjeto"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/main_steps"
+            android:textColor="@color/poro_text_secondary"
+            android:textSize="15sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/btnAtivar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/main_enable" />
 
-<!-- aqui é onde aparece o nome do teclado ao instalar ele-->
+        <Button
+            android:id="@+id/btnEscolher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/main_choose" />
+
+        <Button
+            android:id="@+id/btnDicionario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/main_dictionary" />
+
+        <Button
+            android:id="@+id/btnConfiguracoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/main_settings" />
+
+        <EditText
+            android:id="@+id/campoTeste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/main_test_hint"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences|textMultiLine"
+            android:minHeight="48dp"
+            android:textColor="@color/poro_text"
+            android:textColorHint="@color/poro_hint" />
+
+        <Button
+            android:id="@+id/btnLimpar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/main_clear_learned" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/main_privacy"
+            android:textColor="@color/poro_text_muted"
+            android:textSize="13sp" />
+    </LinearLayout>
+</ScrollView>

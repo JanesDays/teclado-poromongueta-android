@@ -4,6 +4,15 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal">
 
+    <ImageButton
+        android:id="@+id/btnEmoji"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="@string/emoji_button"
+        android:scaleType="center"
+        android:src="@drawable/ic_emoji" />
+
     <TextView
         android:id="@+id/suggestion1"
         android:layout_width="0dp"
@@ -12,14 +21,14 @@
         android:gravity="center"
         android:padding="8dp"
         android:textSize="16sp"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/poro_text"
         android:background="?android:attr/selectableItemBackground"
         android:visibility="invisible" />
 
     <View
         android:layout_width="1dp"
         android:layout_height="match_parent"
-        android:background="#3A3A3A" />
+        android:background="@color/poro_bar_divider" />
 
     <TextView
         android:id="@+id/suggestion2"
@@ -29,14 +38,14 @@
         android:gravity="center"
         android:padding="8dp"
         android:textSize="16sp"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/poro_text"
         android:background="?android:attr/selectableItemBackground"
         android:visibility="invisible" />
 
     <View
         android:layout_width="1dp"
         android:layout_height="match_parent"
-        android:background="#3A3A3A" />
+        android:background="@color/poro_bar_divider" />
 
     <TextView
         android:id="@+id/suggestion3"
@@ -46,8 +55,17 @@
         android:gravity="center"
         android:padding="8dp"
         android:textSize="16sp"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/poro_text"
         android:background="?android:attr/selectableItemBackground"
         android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/btnMic"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="@string/voice_button"
+        android:scaleType="center"
+        android:src="@drawable/ic_mic" />
 
 </merge>

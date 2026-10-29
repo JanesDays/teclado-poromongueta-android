@@ -1,32 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="#121212">
+    android:background="@color/poro_bg">
 
     <com.rick.tecladoporomongueta.SuggestionBarView
         android:id="@+id/suggestionBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#1A1A1A"
+        android:background="@color/poro_bar"
         android:paddingTop="4dp"
         android:paddingBottom="4dp" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#2A2A2A" />
+        android:background="@color/poro_divider" />
 
-    <com.rick.tecladoporomongueta.CustomKeyboardView
-        android:id="@+id/keyboard"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#121212"
-        android:keyBackground="@drawable/key_bg"
-        android:keyTextColor="#FFFFFF"
-        android:keyTextSize="20sp"
-        android:paddingTop="12dp"
-        android:paddingBottom="50dp" />
+        android:layout_height="wrap_content">
+
+        <com.rick.tecladoporomongueta.PoroKeyboardView
+            android:id="@+id/keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/poro_bg"
+            android:paddingTop="12dp"
+            android:paddingBottom="50dp"
+            app:poroKeyBackground="@drawable/key_bg"
+            app:poroKeyTextColor="@color/poro_text"
+            app:poroKeyTextSize="20sp"
+            app:poroLabelTextSize="14sp" />
+
+        <com.rick.tecladoporomongueta.EmojiPanelView
+            android:id="@+id/emojiPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/poro_bg"
+            android:visibility="gone" />
+    </FrameLayout>
 
 </LinearLayout>

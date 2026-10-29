@@ -6,7 +6,7 @@
     android:gravity="center"
     android:textSize="32sp"
     android:textStyle="bold"
-    android:textColor="#FFFFFF"
+    android:textColor="@color/poro_text"
     android:includeFontPadding="false"
     android:paddingStart="18dp"
     android:paddingEnd="18dp"

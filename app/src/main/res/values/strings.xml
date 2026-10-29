@@ -1,3 +1,55 @@
 <resources>
     <string name="app_name">Teclado Poromongueta</string>
+
+    <string name="close">Fechar</string>
+    <string name="main_title">Teclado Poromongûetá Instalado</string>
+    <string name="main_creator">Criador do Projeto: MBo\'esara Esãîã Tremembé</string>
+    <string name="main_developer">Desenvolvido por: Rick Janes Matos Dias</string>
+
+    <string name="main_steps">Para usar o teclado:\n1. Ative-o nas configurações do Android.\n2. Escolha-o como teclado atual.\n3. Experimente no campo abaixo.</string>
+    <string name="main_enable">1. Ativar teclado</string>
+    <string name="main_choose">2. Escolher teclado</string>
+    <string name="main_test_hint">3. Digite aqui para testar</string>
+    <string name="main_settings">Configurações</string>
+    <string name="main_dictionary">Meu dicionário</string>
+    <string name="main_clear_learned">Limpar palavras aprendidas</string>
+    <string name="main_cleared">Histórico de digitação apagado</string>
+    <string name="main_privacy">O histórico de palavras fica criptografado somente neste aparelho. O teclado não usa internet e não aprende em campos de senha, e-mail ou endereço. A digitação por voz usa o reconhecimento de voz do próprio Android.</string>
+
+    <string name="emoji_button">Emoji</string>
+    <string name="voice_button">Digitar por voz</string>
+    <string name="voice_unavailable">Reconhecimento de voz indisponível neste aparelho</string>
+
+    <string name="dict_title">Meu dicionário</string>
+    <string name="dict_summary">%1$d palavras do dicionário · %2$d suas</string>
+    <string name="dict_search_hint">Buscar palavra ou tradução</string>
+    <string name="dict_empty">Nenhuma palavra encontrada.</string>
+    <string name="dict_add">Adicionar palavra</string>
+    <string name="dict_import">Importar</string>
+    <string name="dict_share">Compartilhar</string>
+    <string name="dict_save">Salvar arquivo</string>
+    <string name="dict_add_title">Adicionar palavra</string>
+    <string name="dict_word_hint">Palavra</string>
+    <string name="dict_translation_hint">Tradução (opcional)</string>
+    <string name="dict_save_button">Salvar</string>
+    <string name="dict_cancel">Cancelar</string>
+    <string name="dict_invalid_word">Palavra inválida. Use só letras, apóstrofo e hífen.</string>
+    <string name="dict_added">Palavra adicionada</string>
+    <string name="dict_user_mark">%1$s  ★</string>
+    <string name="dict_remove_title">Remover \"%1$s\"?</string>
+    <string name="dict_remove">Remover</string>
+    <string name="dict_imported">%1$d palavras importadas</string>
+    <string name="dict_import_error">Não foi possível ler o arquivo</string>
+    <string name="dict_nothing_to_share">Você ainda não adicionou palavras</string>
+    <string name="dict_share_subject">Palavras do Teclado Poromonguetá</string>
+    <string name="dict_saved">Arquivo salvo</string>
+
+    <string name="settings_title">Configurações</string>
+    <string name="settings_suggestions">Sugestões de palavras</string>
+    <string name="settings_vibration">Vibrar ao tocar nas teclas</string>
+    <string name="settings_height">Altura das teclas: %1$d%%</string>
+    <string name="settings_theme">Tema</string>
+    <string name="settings_theme_system">Seguir o sistema</string>
+    <string name="settings_theme_light">Claro</string>
+    <string name="settings_theme_dark">Escuro</string>
 </resources>

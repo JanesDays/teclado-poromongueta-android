@@ -1,62 +1,57 @@
 package com.rick.tecladoporomongueta
 
 import android.content.Context
+import android.text.TextUtils
 import android.util.AttributeSet
 import android.view.LayoutInflater
+import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
 
+/** Barra acima do teclado: botão de emoji, 3 sugestões e botão de voz. */
 class SuggestionBarView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null
 ) : LinearLayout(context, attrs) {
 
-    private val suggestion1: TextView
-    private val suggestion2: TextView
-    private val suggestion3: TextView
+    private val slots: List<TextView>
+    private val emojiButton: View
+    private val micButton: View
 
     private var onSuggestionClickListener: ((String) -> Unit)? = null
 
-    private val suggestions = arrayOfNulls<String>(3)
+    private val suggestions = arrayOfNulls<String>(SLOT_COUNT)
 
     init {
         orientation = HORIZONTAL
-        val inflater = LayoutInflater.from(context)
-        inflater.inflate(R.layout.suggestion_bar, this, true)
+        LayoutInflater.from(context).inflate(R.layout.suggestion_bar, this, true)
 
-        suggestion1 = findViewById(R.id.suggestion1)
-        suggestion2 = findViewById(R.id.suggestion2)
-        suggestion3 = findViewById(R.id.suggestion3)
+        slots = listOf(
+            findViewById(R.id.suggestion1),
+            findViewById(R.id.suggestion2),
+            findViewById(R.id.suggestion3)
+        )
+        emojiButton = findViewById(R.id.btnEmoji)
+        micButton = findViewById(R.id.btnMic)
 
-        suggestion1.setOnClickListener {
-            suggestions[0]?.let { word ->
-                onSuggestionClickListener?.invoke(word)
-            }
+        slots.forEach {
+            it.maxLines = 1
+            it.ellipsize = TextUtils.TruncateAt.END
         }
-        suggestion2.setOnClickListener {
-            suggestions[1]?.let { word ->
-                onSuggestionClickListener?.invoke(word)
-            }
-        }
-        suggestion3.setOnClickListener {
-            suggestions[2]?.let { word ->
-                onSuggestionClickListener?.invoke(word)
+
+        slots.forEachIndexed { index, view ->
+            view.setOnClickListener {
+                suggestions[index]?.let { word -> onSuggestionClickListener?.invoke(word) }
             }
         }
     }
 
     fun setSuggestions(suggestions: List<String>) {
-        val views = listOf(suggestion1, suggestion2, suggestion3)
-        for (i in 0 until 3) {
-            this.suggestions[i] = null
-            if (i < suggestions.size) {
-                this.suggestions[i] = suggestions[i]
-                views[i].text = suggestions[i]
-                views[i].visibility = VISIBLE
-            } else {
-                views[i].text = ""
-                views[i].visibility = INVISIBLE
-            }
+        for (i in 0 until SLOT_COUNT) {
+            val word = suggestions.getOrNull(i)
+            this.suggestions[i] = word
+            slots[i].text = word ?: ""
+            slots[i].visibility = if (word != null) VISIBLE else INVISIBLE
         }
     }
 
@@ -64,7 +59,24 @@ class SuggestionBarView @JvmOverloads constructor(
         onSuggestionClickListener = listener
     }
 
+    fun setOnEmojiClickListener(listener: () -> Unit) {
+        emojiButton.setOnClickListener { listener() }
+    }
+
+    fun setOnMicClickListener(listener: () -> Unit) {
+        micButton.setOnClickListener { listener() }
+    }
+
+    /** O microfone some em campos de senha, e-mail e endereço. */
+    fun setMicVisible(visible: Boolean) {
+        micButton.visibility = if (visible) VISIBLE else INVISIBLE
+    }
+
     fun clearSuggestions() {
         setSuggestions(emptyList())
+    }
+
+    private companion object {
+        const val SLOT_COUNT = 3
     }
 }

@@ -15,3 +15,11 @@
 local.properties
 *.apk
 *.ico
+
+# Chaves de assinatura (nunca versionar)
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+*.pem
+*.p12

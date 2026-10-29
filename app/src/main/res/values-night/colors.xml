@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema escuro -->
+    <color name="poro_bg">#121212</color>
+    <color name="poro_bar">#1A1A1A</color>
+    <color name="poro_divider">#2A2A2A</color>
+    <color name="poro_bar_divider">#3A3A3A</color>
+    <color name="poro_text">#FFFFFF</color>
+    <color name="poro_text_secondary">#BBBBBB</color>
+    <color name="poro_text_muted">#999999</color>
+    <color name="poro_hint">#888888</color>
+    <color name="poro_key">#2C2C2C</color>
+    <color name="poro_key_pressed">#3A3A3A</color>
+    <color name="poro_preview_bg">#3A3A3A</color>
+</resources>

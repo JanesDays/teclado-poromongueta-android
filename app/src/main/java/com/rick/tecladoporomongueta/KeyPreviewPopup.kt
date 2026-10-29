@@ -1,7 +1,7 @@
 package com.rick.tecladoporomongueta
 
 import android.content.Context
-import android.inputmethodservice.Keyboard
+
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
@@ -32,7 +32,7 @@ class KeyPreviewPopup(private val context: Context) {
     private val density = context.resources.displayMetrics.density
     private val screenWidth = context.resources.displayMetrics.widthPixels
 
-    fun show(anchor: View, key: Keyboard.Key, shiftActive: Boolean, rawX: Float, rawY: Float) {
+    fun show(anchor: View, key: Key, shiftActive: Boolean, rawX: Float, rawY: Float) {
         if (!anchor.isAttachedToWindow) return
 
         val label = resolveLabel(key, shiftActive) ?: return
@@ -56,7 +56,7 @@ class KeyPreviewPopup(private val context: Context) {
         val rootLocation = IntArray(2)
         anchor.rootView.getLocationOnScreen(rootLocation)
 
-        val keyScreenTop = anchorLocation[1] + anchor.paddingTop + key.y
+        val keyScreenTop = anchorLocation[1] + anchor.paddingTop + key.y.toInt()
 
         val popupY = keyScreenTop - popupHeight - marginPx - rootLocation[1]
 
@@ -113,24 +113,26 @@ class KeyPreviewPopup(private val context: Context) {
 
     val isShowing: Boolean get() = popupWindow.isShowing
 
-    private fun resolveLabel(key: Keyboard.Key, shiftActive: Boolean): String? {
+    private fun resolveLabel(key: Key, shiftActive: Boolean): String? {
         if (key.codes.isEmpty()) return null
         val primaryCode = key.codes[0]
 
         when (primaryCode) {
-            Keyboard.KEYCODE_DELETE,
-            Keyboard.KEYCODE_DONE,
-            Keyboard.KEYCODE_SHIFT,
-            32 -> return null
+            KeyCodes.DELETE,
+            KeyCodes.DONE,
+            KeyCodes.SHIFT,
+            KeyCodes.SPACE -> return null
         }
 
-        if (primaryCode == -10 || primaryCode == -11 || primaryCode == -12 ||
-            primaryCode == -100 || primaryCode == -101) return null
+        if (primaryCode == KeyCodes.MODE_ABC || primaryCode == KeyCodes.MODE_PORO ||
+            primaryCode == KeyCodes.MODE_SYMBOLS ||
+            primaryCode == KeyCodes.SYMBOLS_PAGE_1 || primaryCode == KeyCodes.SYMBOLS_PAGE_2
+        ) return null
 
-        val label = key.label?.toString() ?: return null
+        val label = key.label
         if (label.isEmpty()) return null
 
-        return if (shiftActive && label.all { it.isLetter() }) {
+        return if (shiftActive && label.any { it.isLetter() }) {
             label.uppercase()
         } else {
             label
