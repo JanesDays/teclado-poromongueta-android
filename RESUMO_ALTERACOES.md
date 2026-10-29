@@ -8,7 +8,7 @@
 #### Arquivos criados
 | Arquivo | Descrição |
 |---------|-----------|
-| `app/src/main/assets/dictionary.txt` | Dicionário base com ~242 palavras do Poromonguetá extraída |
+| `app/src/main/assets/dictionary.txt` | Dicionário base com ~242 palavras do Poromonguetá |
 | `DictionaryManager.kt` | Carrega dicionário 1x em memória. Busca por `startsWith()` case-insensitive |
 | `LearningManager.kt` | SharedPreferences: salva palavras, conta frequência de uso |
 | `SuggestionManager.kt` | Combina dicionário + aprendidas, ordena por frequência |
