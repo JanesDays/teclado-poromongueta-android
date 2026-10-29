@@ -130,7 +130,7 @@ Commitada e enviada ao GitHub (`origin/main`). Artigo completo em `docs/versao-3
 
 ### Sobre o dicionário
 - A função principal é **sugerir palavras prontas enquanto se digita** (já funciona, a partir de `dictionary.txt`). A tela "Meu dicionário" é só um extra para consultar e adicionar palavras.
-- Decisão do Rick: não colocar referências/créditos do autor; o alfabeto veio do pesquisador e antropólogo MBo'esara Esãîã Tremembé, parceiro do projeto.
+- O alfabeto veio do pesquisador e antropólogo MBo'esara Esãîã Tremembé, parceiro do projeto.
 
 ### Lições para as próximas sessões
 - Compilar com `JAVA_HOME="/c/Program Files/Android/Android Studio/jbr"` e `./gradlew testDebugUnitTest assembleDebug lintDebug`.
