@@ -23,3 +23,6 @@ keystore.properties
 signing.properties
 *.pem
 *.p12
+
+# Anotações internas (só no computador)
+RESUMO_ALTERACOES.md

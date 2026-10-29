@@ -60,7 +60,6 @@ Cobrem normalização de texto, dicionário e sugestões.
 - [Versão 3.0: notas](docs/versao-3.0.md)
 - [CHANGELOG](CHANGELOG.md)
 - [Como adicionar palavras](docs/COMO_ADICIONAR_PALAVRAS.md)
-- [Resumo das alterações e próximos passos](RESUMO_ALTERACOES.md)
 - [Política de privacidade](PRIVACY.md)
 
 ## Status do projeto

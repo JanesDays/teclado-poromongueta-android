@@ -1,6 +1,6 @@
 # Teclado Poromongûetá — versão 3.1
 
-Artigo de consulta sobre tudo o que mudou nesta versão: o que é, por que foi feito, como funciona e onde está no código. Para a lista curta de mudanças veja o [CHANGELOG](../CHANGELOG.md); para o estado atual e o que falta fazer, o [RESUMO_ALTERACOES](../RESUMO_ALTERACOES.md).
+Artigo de consulta sobre tudo o que mudou nesta versão: o que é, por que foi feito, como funciona e onde está no código. Para a lista curta de mudanças veja o [CHANGELOG](../CHANGELOG.md).
 
 - **Versão:** 3.1 (`versionName "3.1"`, `versionCode 4`)
 - **Pacote:** `com.rick.tecladoporomongueta`
@@ -87,7 +87,3 @@ O arquivo sai em `app/build/outputs/apk/debug/app-debug.apk` (APK de teste, inst
 - Receber do pesquisador a lista maior de palavras.
 - Chave de assinatura, AAB e ficha da Play Store.
 - Testar o tema claro e outros tamanhos de tela em mais aparelhos.
-
-## 9. Dicas para as próximas conversas com o Claude
-
-Aponte o arquivo `RESUMO_ALTERACOES.md`: ele guarda o estado atual, as decisões já tomadas e a lista do que falta.
