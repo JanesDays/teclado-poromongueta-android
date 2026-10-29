@@ -15,5 +15,3 @@
   dele se você escolher compartilhar ou salvar o arquivo.
 - Você pode apagar o histórico a qualquer momento em **Limpar palavras aprendidas**, na tela inicial
   do app, ou limpando os dados do app nas configurações do Android.
-
-Contato: [DEFINIR E-MAIL DE CONTATO DO PROJETO]

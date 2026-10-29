@@ -60,7 +60,7 @@ A barra de sugestões mostra **só as palavras em Poromongûetá**. Uma versão 
 - O app não tem permissão de internet.
 - Versão de publicação com minificação e redução de recursos (R8) ligadas.
 - `.gitignore` protege chaves de assinatura (`*.jks`, `*.keystore`, `keystore.properties`).
-- Política de privacidade em [PRIVACY.md](../PRIVACY.md) (falta definir o e-mail de contato).
+- Política de privacidade em [PRIVACY.md](../PRIVACY.md).
 
 ## 5. Como o dicionário funciona
 
@@ -81,7 +81,6 @@ O arquivo sai em `app/build/outputs/apk/debug/app-debug.apk` (APK de teste, inst
 
 ## 8. O que ainda falta
 
-- E-mail de contato na política de privacidade.
 - Escolher a licença do projeto.
 - Conferir os direitos e o conteúdo do dicionário.
 - Receber do pesquisador a lista maior de palavras.
