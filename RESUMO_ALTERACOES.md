@@ -60,7 +60,7 @@
 | `res/drawable/key_preview_bg.xml` | Background arredondado (`#3A3A3A`, raio 10dp) do preview |
 | `res/mipmap-{mdpi,hdpi,xhdpi,xxhdpi,xxxhdpi}/ic_launcher.png` | Ícone personalizado (extraído do .ico original) |
 | `res/mipmap-{mdpi,hdpi,xhdpi,xxhdpi,xxxhdpi}/ic_launcher_round.png` | Ícone redondo |
-| `versao-1.0.md` | Documentação de versão |
+| `versao-1.0.md` | Documentação de versão (hoje `docs/versao-3.0.md`) |
 
 #### Arquivos modificados
 | Arquivo | O que mudou |

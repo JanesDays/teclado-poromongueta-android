@@ -55,4 +55,4 @@
 Os layouts das teclas e os caracteres especiais não foram alterados.
 
 ## 1.0
-Ver [docs/versao-1.0.md](docs/versao-1.0.md).
+Ver [docs/versao-3.0.md](docs/versao-3.0.md) (antes chamado de versao-1.0).

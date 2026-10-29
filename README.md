@@ -57,6 +57,7 @@ Cobrem normalização de texto, dicionário e sugestões.
 
 ## Documentos
 - [Versão 3.1: artigo completo](docs/versao-3.1.md)
+- [Versão 3.0: notas](docs/versao-3.0.md)
 - [CHANGELOG](CHANGELOG.md)
 - [Como adicionar palavras](docs/COMO_ADICIONAR_PALAVRAS.md)
 - [Resumo das alterações e próximos passos](RESUMO_ALTERACOES.md)
